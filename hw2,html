@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" />
+<body>
+
+<form action="hw2.php" method="get">
+請輸入帳號:<input type="text" name="input1"><br>
+請輸入密碼:<input type="password" name="input2"><input type="reset"><br>
+
+請選擇性別:
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<br>
+請選擇居住城市:
+<input type="radio" name="city" value="高雄">高雄
+<input type="radio" name="city" value="台南">台南
+<input type="radio" name="city" value="台北">台北
+<input type="radio" name="city" value="台中">台中
+<input type="radio" name="city" value="金門">金門
+<input type="radio" name="city" value="澎湖">澎湖
+<br>
+
+
+請選擇你的興趣:<br>
+<select name="interest[]" multiple="true">
+
+<option value="運動">運動</option>
+<option value="旅行">旅行</option>
+<option value="電腦">電腦</option>
+<option value="音樂">音樂</option>
+
+
+</select>
+
+請選擇你的年級:<br>
+<select name="list" mulitiple="true">
+<option value="一年級">一年級</option>
+<option value="二年級">二年級</option>
+<option value="三年級">三年級</option>
+<option value="四年級">四年級</option>
+</select>
+<br>
+
+
+<input type="submit">
+
+
+</form>
+
+
+</body>
+</html>
