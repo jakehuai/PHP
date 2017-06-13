@@ -11,7 +11,7 @@ $s_date="now";
 	echo $datetime->format("T")."</br>";
 	echo "current date:"."</br>";
 	echo $datetime->format('Y-m-d')."</br>";
-	echo "2017年12月31日是世界末日，還距離現在相差:";
+	echo "2017年12月31日是世界末日，距離現在還有:";
 
 $second1=floor((strtotime($e_date)-strtotime($s_date)));
 	echo floor($second1/86400).'day';
