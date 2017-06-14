@@ -1,33 +1,33 @@
 <?php
 session_start();
-if(isset($_POST["Item"])){
-	$Item=$_POST["Item"];
-	$_SESSION["ID"]=$Item;
+if(isset($_POST["item"])){
+	$item=$_POST["item"];
+	$_SESSION["ID"]=$item;
 	$_SESSION["quantity"]=$_POST["Quantity"];
 	switch($Item){
-		case 'S001':
+			case 'A001':
 			$_SESSION["name"]="10吋平板電腦";
-			$_SESSION["price"]=12000;
-		break;
-		case 'S002':
-			$_SESSION["name"]="15.6吋筆記型電腦";
-			$_SESSION["price"]=27000;
-		break;
-		case 'S003':
-			$_SESSION["name"]="iphone手機";
-			$_SESSION["price"]=21000;
-		break;
+			$_SESSION["price"]=13250;
+			break;
+			case 'A002':
+			$_SESSION["name"]="15.8吋筆記型電腦";
+			$_SESSION["price"]=28349;
+			break;
+			case 'A003':
+			$_SESSION["name"]="OPpo手機";
+			$_SESSION["price"]=15000;
+			break;
 	}
 	header("Location: hwsavecart.php");
 }
-echo '<form action="" method="post">
+	echo '<form action="" method="post">
 	選擇商品:
-	<select name="Item">
-		<option value="S001">10吋平板電腦 - $12000</option>
-		<option value="S002">15.6吋筆記型電腦 - $27000</option>
-		<option value="S003">iphone手機 - $21000</option>
+	<select name="item">
+		<option value="S001">10吋平板電腦 - $13250</option>
+		<option value="S002">15.6吋筆記型電腦 - $28349</option>
+		<option value="S003">OPpo手機 - $15000</option>
 	</select>
-	<input type="text" size="5" name="Quantity" value="1"/>
-	<input type="submit" value="訂購"/>
+		<input type="text" size="5" name="Quantity" value="1"/>
+		<input type="submit" value="訂購"/>
 	</form>';
 ?>
