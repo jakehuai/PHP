@@ -24,7 +24,7 @@ if(isset($_POST["item"])){
 	選擇商品:
 	<select name="item">
 		<option value="S001">10吋平板電腦 - $13250</option>
-		<option value="S002">15.6吋筆記型電腦 - $28349</option>
+		<option value="S002">15.8吋筆記型電腦 - $28349</option>
 		<option value="S003">OPpo手機 - $15000</option>
 	</select>
 		<input type="text" size="5" name="Quantity" value="1"/>
