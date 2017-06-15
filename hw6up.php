@@ -12,15 +12,15 @@
    for ($j=0 ; $j<$i ; $j++) 
    { 
 
-      $tmpfile=$_FILES["uploadfile"]["tmp_name"][$j]; 
+      $tmpfile=$_FILES["uploadfile"]["tmp_name"][$b]; 
 
-         $file2=mb_convert_encoding($_FILES["uploadfile"]["name"][$j],"big5","utf8"); 
+         $file2=mb_convert_encoding($_FILES["uploadfile"]["name"][$b],"big5","utf8"); 
 
          
          if(move_uploaded_file($tmpfile,$uploaddir.$file2)) 
      { 
             echo "Upload OK<br>"; 
-            echo "Files Name：".$_FILES["uploadfile"]["name"][$j]."<br>"; 
+            echo "Files Name：".$_FILES["uploadfile"]["name"][$b]."<br>"; 
      
       } 
      else 
