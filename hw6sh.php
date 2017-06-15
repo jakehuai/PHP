@@ -9,15 +9,15 @@
 	<input type="hidden" name="max_file_size" value="12560090">
 
 	<?php
-	$i=$_POST["sum"];
+	$a=$_POST["sum"];
 
-		for($j=0;$j<$i;$j++){
+		for($b=0;$b<$a;$b++){
 	?>
 
-		Chosen files<?php echo $j+1;?>:<input type="file" name="uploadfile[]">
+		Chosen files<?php echo $b+1;?>:<input type="file" name="uploadfile[]">
 
 	
-		<input type="hidden" name="number" value=<?php $i; ?>>
+		<input type="hidden" name="number" value=<?php $a; ?>>
 		<input type="submit" value="Send">
 	</form>
 
